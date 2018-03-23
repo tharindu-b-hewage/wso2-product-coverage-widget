@@ -1,0 +1,9 @@
+{
+  "id": "WSO2 Product Test Coverage",
+  "title": "SonarQube Product Unit Test Coverage",
+  "type": "gadget",
+  "thumbnail": "store://gadget/product-coverage/index.png",
+  "data": {
+    "url": "store://gadget/product-coverage/index.xml"
+  }
+}

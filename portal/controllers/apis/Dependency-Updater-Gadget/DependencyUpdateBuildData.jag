@@ -1,0 +1,18 @@
+<%
+
+var action = request.getParameter("action");
+function getDataFromService(){
+    
+    var log = new Log();
+    var url  = "http://192.168.57.166:8080/service/getBuildStatus";
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.setRequestHeader("Authorization", "Basic RGVwZW5kZW5jeVVwZGF0ZXI6VXBkYXRlRGVwZW5kZW5jaWVz");
+    xhr.send();
+    print(xhr.responseText);
+}
+
+if (action === "getBuild"){
+    getDataFromService();
+}
+%>
